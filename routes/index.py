@@ -27,6 +27,6 @@ async def index():
             "/what?image=url"
         ],
         "credits": [
-            "Alexflipnote"
+            "AlexFlipnote"
         ]
     }, 200)
