@@ -24,7 +24,8 @@ async def index():
             "/scroll?text=text",
             "/saa   hame?image=url",
             "/ship?user=url&user2=url",
-            "/what?image=url"
+            "/what?image=url",
+            "/zalgo?text=text"
         ],
         "credits": [
             "AlexFlipnote"
