@@ -1,8 +1,5 @@
-this is same as upstream just with some extra stuff
-
-# AlexFlipnote API - Revived
-Recently the AlexFlipnote API had the image generation routes removed.  
-This GitHub repo will allow you to host AlexFlipnote once again!  
+# Epic API
+Alexflipnote API fork, but with some other additions!
 
 ### Install
 - Install python if you havent already got it.  
@@ -12,4 +9,4 @@ This GitHub repo will allow you to host AlexFlipnote once again!
 
 ### Credits
 - https://github.com/AlexFlipnote  
-- Other people who worked on AlexFlipnote API.  
+- Benny :)
