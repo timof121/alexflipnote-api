@@ -17,6 +17,6 @@ async def fml():
         abort(400, "You are limited to 500 characters only, sorry")
     resp = zalgo.zalgo().zalgofy(text)
 
-    return jsonify({
-        "text": resp
-    })
+    return (
+        resp
+    )
