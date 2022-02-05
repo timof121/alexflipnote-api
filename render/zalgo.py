@@ -7,7 +7,7 @@ blueprint = Blueprint('zalgo', __name__)
 
 
 @blueprint.route("/zalgo", methods=['GET'])
-async def fml():
+async def zalgotext():
     """?text=text"""
     text = request.args.get('text')
     if not text:

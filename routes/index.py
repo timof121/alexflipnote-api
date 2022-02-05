@@ -22,8 +22,9 @@ async def index():
             "/pornhub?text=text&text2=text",
             "/salty?image=url",
             "/scroll?text=text",
-            "/saa   hame?image=url",
+            "/shame?image=url",
             "/ship?user=url&user2=url",
+            "/tts?text=text"
             "/what?image=url",
             "/zalgo?text=text"
         ],

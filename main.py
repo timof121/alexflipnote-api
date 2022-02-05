@@ -1,4 +1,5 @@
 import quart
+from quart_rate_limiter import RateLimiter
 
 from routes.index import blueprint as index_blueprint
 
@@ -19,10 +20,12 @@ from render.salty import blueprint as salty_blueprint
 from render.scroll import blueprint as scroll_blueprint
 from render.shame import blueprint as shame_blueprint
 from render.ship import blueprint as ship_blueprint
+from render.tts import blueprint as tts_blueprint
 from render.what import blueprint as what_blueprint
 from render.zalgo import blueprint as zalgo_blueprint
 
 app = quart.Quart(__name__)
+rate_limiter = RateLimiter(app)
 
 app.register_blueprint(index_blueprint)
 
@@ -43,5 +46,6 @@ app.register_blueprint(salty_blueprint)
 app.register_blueprint(scroll_blueprint)
 app.register_blueprint(shame_blueprint)
 app.register_blueprint(ship_blueprint)
+app.register_blueprint(tts_blueprint)
 app.register_blueprint(what_blueprint)
 app.register_blueprint(zalgo_blueprint)
