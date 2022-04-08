@@ -23,6 +23,7 @@ from render.ship import blueprint as ship_blueprint
 from render.tts import blueprint as tts_blueprint
 from render.what import blueprint as what_blueprint
 from render.zalgo import blueprint as zalgo_blueprint
+from render.ascii import blueprint as ascii_blueprint
 
 app = quart.Quart(__name__)
 rate_limiter = RateLimiter(app)
@@ -49,3 +50,4 @@ app.register_blueprint(ship_blueprint)
 app.register_blueprint(tts_blueprint)
 app.register_blueprint(what_blueprint)
 app.register_blueprint(zalgo_blueprint)
+app.register_blueprint(ascii_blueprint)
