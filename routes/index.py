@@ -4,6 +4,7 @@ blueprint = quart.Blueprint('index', __name__)
 
 @blueprint.route('/')
 async def index():
+    quart.render_template('index.html')
     return quart.jsonify({
         "routes": [
             "/achievement?text=text[&icon=int]",
@@ -26,9 +27,10 @@ async def index():
             "/ship?user=url&user2=url",
             "/tts?text=text"
             "/what?image=url",
-            "/zalgo?text=text"
+            "/zalgo?text=text",
         ],
         "credits": [
-            "AlexFlipnote"
+            "AlexFlipnote, Benny, timof121"
         ]
     }, 200)
+    

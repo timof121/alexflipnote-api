@@ -9,4 +9,4 @@ Alexflipnote API fork, but with some other additions!
 
 ### Credits
 - https://github.com/AlexFlipnote  
-- Benny :)
+- Benny :) for the api base
